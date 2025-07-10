@@ -5,22 +5,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "2108966088")
+    API_HASH  = os.environ.get("API_HASH", "c203a8f1f5649378b8857a6e02f6d825")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8065708484:AAHoS85tlh1fZoKh5QI1LVYndxWKRzVPu-I") 
    
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
-    DATABASE_URL  = os.environ.get("DATABASE_URL","")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME","MOVIEGOLDEN")     
+    DATABASE_URL  = os.environ.get("DATABASE_URL","mongodb+srv://skim40981:OfN9hlkvdPB6puqr@cluster0.kufeyss.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '2108966088').split()]
 
     # channels logs
-    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "-1002736281938") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002734547238"))
 
     # web response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
@@ -39,7 +39,7 @@ class Txt(object):
 
 ➻ This Bot Also Supports Custom Thumbnail And Custom Caption.
 
-<b>Bot Is Made By :</b> @OnAnimeSeries"""
+<b>Bot Is Made By :</b> @MOVIE_GOLDEN"""
 
     ABOUT_TXT = """
 ╭───────────────⍟
